@@ -1,7 +1,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes, Navigate } from "react-router-dom";
 import { CubeProvider } from '@cubejs-client/react';
 import "assets/plugins/nucleo/css/nucleo.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -18,11 +18,11 @@ const cubeApi = cube(
 
 root.render(
   <CubeProvider cubeApi={cubeApi}>
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/admin/*" element={<AdminLayout />} />
-      <Route path="*" element={<Navigate to="/admin/index" replace />} />
+      <Route path="*" element={<Navigate to="/admin/index"/>} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
   </CubeProvider>
 );

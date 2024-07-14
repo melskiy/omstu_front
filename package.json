@@ -2,7 +2,7 @@
   "name": "dashboard-react",
   "version": "1.2.4",
   "main": "index.js",
-  "homepage": ".",
+  "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
