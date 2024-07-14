@@ -1,0 +1,17 @@
+.drop-zone {
+    margin-top: 2em;
+    border: 2px dashed #999; /* Пунктирная граница */
+    padding: 7em;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .insert{
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  .InsertButton{
+    margin-top: 2em;
+  }
