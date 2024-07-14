@@ -108,7 +108,7 @@ const FroudTable = () => {
       "member": "table_view.fraud_probability",
       "operator": "gt",
       "values": [
-        "0.4"
+        "0.5"
       ]
     }
   ]

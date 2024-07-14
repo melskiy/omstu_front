@@ -68,7 +68,7 @@ const useDrilldownCallback = ({
 const PieChartRenderer = ({ resultSet, pivotConfig, onDrilldownRequested }) => {
   
   const data = {
-    labels: ['>= 0.8', '0.6 - 0.8', '0.4 - 0.6', '< 0.4'],
+    labels: ['Опасные', 'Возможно опасные', 'Подозрительные', 'Обычные'],
     datasets: [{
       label: 'Fraud Probability',
       data: [0, 0, 0, 0],
@@ -82,9 +82,9 @@ const PieChartRenderer = ({ resultSet, pivotConfig, onDrilldownRequested }) => {
       const value = r.x;
       if (value >= 0.8) {
         data.datasets[0].data[0] += r.value;
-      } else if (value >= 0.6) {
+      } else if (value >= 0.7) {
         data.datasets[0].data[1] += r.value;
-      } else if (value >= 0.4) {
+      } else if (value >= 0.5) {
         data.datasets[0].data[2] += r.value;
       } else {
         data.datasets[0].data[3] += r.value;

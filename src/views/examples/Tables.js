@@ -117,9 +117,9 @@ const TableRenderer = ({ resultSet, pivotConfig }) => {
   const rowClassName = (record, index) => {
     if (record['table_view.fraud_probability'] >= 0.8 ){
       return 'red-row';
-    }else if (record['table_view.fraud_probability'] >= 0.6 && record['table_view.fraud_probability'] < 0.8){
+    }else if (record['table_view.fraud_probability'] >= 0.7 && record['table_view.fraud_probability'] < 0.8){
       return 'orange-row';
-    }else if(record['table_view.fraud_probability'] > 0.4 && record['table_view.fraud_probability'] < 0.6){
+    }else if(record['table_view.fraud_probability'] > 0.5 && record['table_view.fraud_probability'] < 0.7){
       return 'yellow-row';
     }else{
       return '';
