@@ -38,9 +38,9 @@ const Index = (props) => {
                 <Row className="align-items-center">
                   <div className="col">
                     <h6 className="text-uppercase text-light ls-1 mb-1">
-                      Транзакции
+                      Вакансии
                     </h6>
-                  <h2 className="text-uppercase text-light ls-1 mb-1">Всего транзакций</h2>
+                  <h2 className="text-uppercase text-light ls-1 mb-1">Всего вакансий</h2>
                   </div>
                 </Row>
               </CardHeader>
@@ -54,10 +54,7 @@ const Index = (props) => {
               <CardHeader className="bg-transparent">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h6 className="text-uppercase text-muted ls-1 mb-1">
-                      Операции
-                    </h6>
-                    <h2 className="mb-0">Распределение мошеннических транзакций</h2>
+                    <h2 className="mb-0">Распределение вакансиий</h2>
                   </div>
                 </Row>
               </CardHeader>
@@ -76,7 +73,7 @@ const Index = (props) => {
               <CardHeader className="border-0">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h3 className="mb-0">Последние мошеннические операции</h3>
+                    <h3 className="mb-0">Последние подходящие вакансии</h3>
                   </div>
                 </Row>
               </CardHeader>
@@ -89,9 +86,9 @@ const Index = (props) => {
                 <Row className="align-items-center">
                   <div className="col ">
                     <h6 className="text-uppercase text-muted ls-1 mb-1">
-                      Транзации
+                      Вакансии
                     </h6>
-                    <h2 className="mb-0">Распределение успешных транзакций</h2>
+                    <h2 className="mb-0">Распределение подходящих вакансиий</h2>
                   </div>
                 </Row>
               </CardHeader>
