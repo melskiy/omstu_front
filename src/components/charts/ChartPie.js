@@ -68,7 +68,7 @@ const useDrilldownCallback = ({
 const PieChartRenderer = ({ resultSet, pivotConfig, onDrilldownRequested }) => {
   
   const data = {
-    labels: ['Опасные', 'Возможно опасные', 'Подозрительные', 'Обычные'],
+    labels: ['Самая подходящая', 'Возможно подходящая', 'Интересная', 'Обычные'],
     datasets: [{
       label: 'Fraud Probability',
       data: [0, 0, 0, 0],

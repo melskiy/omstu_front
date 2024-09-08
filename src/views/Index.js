@@ -40,7 +40,7 @@ const Index = (props) => {
                     <h6 className="text-uppercase text-light ls-1 mb-1">
                       Вакансии
                     </h6>
-                  <h2 className="text-uppercase text-light ls-1 mb-1">Всего вакансий</h2>
+                  <h2 className="text-uppercase text-light ls-1 mb-1">Всего вакансий геолога</h2>
                   </div>
                 </Row>
               </CardHeader>
